@@ -163,6 +163,9 @@ def health_check():
 
     Returns:
         JSON object with message and optional database connectivity information.
+
+    Smoke note:
+        This endpoint is used by integration smoke checks to verify service reachability.
     """
     msg = {"message": "Healthy"}
     db_url = get_db_url()
